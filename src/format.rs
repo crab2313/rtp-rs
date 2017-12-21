@@ -1,15 +1,3 @@
-pub mod format;
-
-pub struct RtpSession {
-}
-
-pub struct RtpEndPoint {
-}
-
-pub enum Payload {
-    TestPayload
-}
-
 pub struct RtpHeader {
     csrc: u8,
     marker: bool,
@@ -18,3 +6,8 @@ pub struct RtpHeader {
     timestamp: u32,
     ssrc: u32,
 }
+
+pub struct RtpPacket {
+    header: RtpHeader,
+}
+
